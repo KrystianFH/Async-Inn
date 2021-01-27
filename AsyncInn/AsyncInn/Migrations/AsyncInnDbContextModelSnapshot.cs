@@ -32,6 +32,18 @@ namespace AsyncInn.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Amenities");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            Name = "Mini Fridge"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            Name = "Whirlpool Tub"
+                        });
                 });
 
             modelBuilder.Entity("AsyncInn.Models.Hotel", b =>
@@ -68,6 +80,28 @@ namespace AsyncInn.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Hotels");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            City = "New Orleans",
+                            Country = "USA",
+                            Name = "First Hotel",
+                            Phone = "5551234567",
+                            State = "Louisiana",
+                            StreetAddress = "01 Hotel Street"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            City = "San Antonio",
+                            Country = "USA",
+                            Name = "Second Hotel",
+                            Phone = "5552345678",
+                            State = "Texas",
+                            StreetAddress = "02 Motel Row"
+                        });
                 });
 
             modelBuilder.Entity("AsyncInn.Models.Room", b =>
@@ -87,6 +121,32 @@ namespace AsyncInn.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Rooms");
+
+                    b.HasData(
+                        new
+                        {
+                            ID = 1,
+                            Layout = 1,
+                            Name = "Single Bed"
+                        },
+                        new
+                        {
+                            ID = 2,
+                            Layout = 2,
+                            Name = "Double Bed"
+                        },
+                        new
+                        {
+                            ID = 3,
+                            Layout = 3,
+                            Name = "Queen Suite"
+                        },
+                        new
+                        {
+                            ID = 4,
+                            Layout = 4,
+                            Name = "King Suite"
+                        });
                 });
 #pragma warning restore 612, 618
         }
