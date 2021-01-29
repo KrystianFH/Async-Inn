@@ -13,4 +13,7 @@ Clone the repo down to your terminal, and open in Visual Studio Community. Open 
 ## Architecture
 Utilizes an Entity Framework of Model-View-Controller structure.
 
+## UML
+- ![Async Inn UML](AsyncInnUML.png)
+
 ## Change Log
